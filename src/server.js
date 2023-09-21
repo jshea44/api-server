@@ -4,8 +4,11 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
+// Import route handlers for food and clothes
 const foodRouter = require('./routes/food.js');
 const clothesRouter = require('./routes/clothes.js');
+
+// Import error handling middleware
 const notFoundHandler = require('./error-handlers/404.js');
 const serverErrorHandler = require('./error-handlers/500.js');
 
