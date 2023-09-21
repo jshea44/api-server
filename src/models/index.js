@@ -8,7 +8,7 @@ const Clothes = require('./clothes.js');
 const SQL_CONNECTION_STRING =
   process.env.SQL_CONNECTION_STRING || 'sqlite:memory';
 
-const sequelize = new Sequelize(SQL_CONNECTION_STRING, { dialect: 'postgres' });
+const sequelize = new Sequelize(SQL_CONNECTION_STRING);
 
 module.exports = {
   sequelize,
