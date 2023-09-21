@@ -6,7 +6,7 @@ const Food = require('./food.js');
 const Clothes = require('./clothes.js');
 
 const SQL_CONNECTION_STRING =
-  process.env.SQL_CONNECTION_STRING || 'sqlite:memory';
+  process.env.SQL_CONNECTION_STRING || 'sqlite:memory:';
 
 const sequelize = new Sequelize(SQL_CONNECTION_STRING);
 
