@@ -9,6 +9,7 @@ Basic API server with tests.
 ## PR Link
 
 [PR Page](https://github.com/jshea44/api-server/pulls?q=is%3Apr+is%3Aclosed)
+[Lab-04 Partner PR](https://github.com/jshea44/api-server/pull/4)
 
 ## Installation
 
@@ -25,8 +26,8 @@ Send a request:
 FOOD
 
 ```text
-method: GET
-route: /food
+method: GET or POST || PATCH/PUT or DELETE
+route: /api/food || /api/food/:id
 params:
   name{String},
   type{String}
@@ -35,8 +36,8 @@ params:
 CLOTHES
 
 ```text
-method: GET
-route: /clothes
+method: GET or POST || PATCH/PUT or DELETE
+route: /api/clothes || /api/clothes/:id
 params:
   name{String},
   type{String}
