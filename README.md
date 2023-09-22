@@ -6,10 +6,14 @@ Basic API server with tests.
 
 [Deployed Server](https://basic-api-class-03.onrender.com);
 
-## PR Link
+## Lab 03 PR Link
 
 [PR Page](https://github.com/jshea44/api-server/pulls?q=is%3Apr+is%3Aclosed)
-[Lab-04 Partner PR](https://github.com/jshea44/api-server/pull/4)
+
+## Lab 04 PR Links
+
+- [Patner PR - Ekaterina Khoroshilova](https://github.com/jshea44/api-server/pull/4)
+- [Partner PR - Joshua Shea](https://github.com/KatKho/api-server/pulls)
 
 ## Installation
 
@@ -42,3 +46,8 @@ params:
   name{String},
   type{String}
 ```
+
+## Contributors
+
+- Jacob Knaack
+- Joshua Shea
