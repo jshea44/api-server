@@ -16,11 +16,10 @@ afterAll(async () => {
 // Tests for /api/food route
 describe('Testing the REST /food Router', () => {
   // Test CREATE
-  xtest('Should CREATE food (/food)', async () => {
+  test('Should CREATE food (/food)', async () => {
     let response = await request.post('/api/food').send({
       name: 'Banana',
       type: 'fruit',
-      clothesId: 2,
     });
 
     expect(response.status).toEqual(200);
@@ -36,7 +35,7 @@ describe('Testing the REST /food Router', () => {
   });
 
   // Test UPDATE
-  xtest('Should UPDATE food (/food/1)', async () => {
+  test('Should UPDATE food (/food/1)', async () => {
     let response = await request.put('/api/food/1').send({
       name: 'Kale',
       type: 'vegetable',

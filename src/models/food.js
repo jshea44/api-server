@@ -15,7 +15,7 @@ const FoodModel = (sequelize, DataTypes) =>
     },
     clothesId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 
