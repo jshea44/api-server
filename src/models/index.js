@@ -7,9 +7,9 @@ const Clothes = require('./clothes.js');
 const Collection = require('./Collection.js');
 
 const SQL_CONNECTION_STRING =
-  process.env.SQL_CONNECTION_STRING || 'sqlite:memory';
+  process.env.SQL_CONNECTION_STRING || 'sqlite:memory:';
 
-const sequelize = new Sequelize(SQL_CONNECTION_STRING, { dialect: 'postgres' });
+const sequelize = new Sequelize(SQL_CONNECTION_STRING);
 
 const FoodModel = Food(sequelize, DataTypes);
 const ClothesModel = Clothes(sequelize, DataTypes);
